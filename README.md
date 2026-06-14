@@ -48,7 +48,7 @@ LICENSE            CERN-OHL-S v2   ·   LICENSE-docs   CC-BY-SA 4.0
    then add `pcb/assembly/BOM_jlcpcb.xlsx` + `CPL_jlcpcb.xlsx` for SMT assembly of the LEDs /
    caps / diodes. See [BOM.md](BOM.md) for costs (~€72/board all-in at qty 5).
 2. **Make the housing** — pick one route:
-   - **3D-printed:** slice `housing/base-plate.3mf` + `housing/back-plate.3mf`.
+   - **3D-printed:** slice `housing/base-plate.3mf` + `housing/back-plate.3mf`. Depending on the printer, the housing cannot be printed in one piece. I've seperated these components into "puzzle parts" based on the print bed of a BambuLab H2S. The parts can then be fused using Acetone.
    - **CNC-machined:** mill `housing/housing-body.step` from a solid block of PE.
    - 9× Ø10×5 mm neodymium magnets hold the front/back together.
 3. **Flash QlockWork** to the ESP8266 — see [Firmware & pinout](#firmware--pinout). A working
